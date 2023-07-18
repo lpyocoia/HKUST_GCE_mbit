@@ -6,14 +6,14 @@
     "dependencies": {
         "core": "*",
         "neopixel": "github:lzty634158/pxt-neopixel"
-
+        
 	
 
     },
     "files": [
         "README.md",
         "main.ts",
-        "_locales/zh/mbit-strings.json"
+        "_locales/en/mbit-strings.json"
 
     ],
     "testFiles": [

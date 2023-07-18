@@ -614,8 +614,8 @@ namespace mbit_Robot {
             speed2 = 4095
         }
 
-        setPwm(12, 0, speed1);
-        setPwm(13, 0, 0);
+        setPwm(12, 0, 0);
+        setPwm(13, 0, speed1);
 
         setPwm(15, 0, speed2);
         setPwm(14, 0, 0);
@@ -636,8 +636,8 @@ namespace mbit_Robot {
         if (speed2 >= 4096) {
             speed2 = 4095
         }
-        setPwm(12, 0, 0);
-        setPwm(13, 0, speed1);
+        setPwm(12, 0, speed1);
+        setPwm(13, 0, 0);
 
         setPwm(15, 0, 0);
         setPwm(14, 0, speed2);
@@ -660,11 +660,11 @@ namespace mbit_Robot {
             speed2 = 4095
         }
         
-        setPwm(12, 0, speed1);
-        setPwm(13, 0, 0);
+        setPwm(12, 0, 0);
+        setPwm(13, 0, speed1);
 
-        setPwm(15, 0, speed2);
-        setPwm(14, 0, 0);
+        setPwm(15, 0, 0);
+        setPwm(14, 0, speed2);
 
         //pins.analogWritePin(AnalogPin.P0, speed);
         //pins.digitalWritePin(DigitalPin.P8, 0);
@@ -723,8 +723,8 @@ namespace mbit_Robot {
         setPwm(12, 0, 0);
         setPwm(13, 0, speed1);
 
-        setPwm(15, 0, speed2);
-        setPwm(14, 0, 0);
+        setPwm(15, 0, 0);
+        setPwm(14, 0, speed2);
 
         //pins.analogWritePin(AnalogPin.P0, speed);
         //pins.digitalWritePin(DigitalPin.P8, 0);

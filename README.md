@@ -1,6 +1,6 @@
 # mbit
 
-Extension for Yahboom_mbit_en -edited by Lycia
+Extension for HKUST Yahboom_mbit_en 
 V3.0.4
 
 ## License

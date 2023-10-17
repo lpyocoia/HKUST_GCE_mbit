@@ -5,7 +5,7 @@ V3.0.4
 
 ## License
 
-MIT
+MIT -modified from yahboom_mbit_en(https://github.com/lzty634158/yahboom_mbit_en)
 
 ## Supported targets
 

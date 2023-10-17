@@ -5,14 +5,15 @@
     "license": "MIT",
     "dependencies": {
         "core": "*",
-        "neopixel": "github:lzty634158/pxt-neopixel"
+        "neopixel": "github:lzty634158/pxt-neopixel",
+        "BitPlayer": "github:lpyocoia/pxt-HKUST_GCE_BitPlayer"
 
     },
     "files": [
         "README.md",
         "main.ts",
         "_locales/en/mbit-strings.json",
-	    "_locales/zh-tw/mbit-strings.json"
+	    "_locales/zh/mbit-strings.json"
 
     ],
     "testFiles": [

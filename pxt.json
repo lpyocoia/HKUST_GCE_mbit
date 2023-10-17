@@ -6,7 +6,7 @@
     "dependencies": {
         "core": "*",
         "neopixel": "github:lzty634158/pxt-neopixel",
-        "BitPlayer": "github:TinkerGen/pxt-BitPlayer"
+        "BitPlayer": "github:lpyocoia/pxt-HKUST_GCE_BitPlayer"
         
 	
 

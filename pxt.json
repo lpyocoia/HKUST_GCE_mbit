@@ -14,12 +14,12 @@
         "README.md",
         "main.ts",
         "_locales/en/mbit-strings.json",
-	"_locales/zh/mbit-strings.json"
+	    "_locales/zh-tw/mbit-strings.json"
 
     ],
     "testFiles": [
         "test.ts"
     ],
     "public": true,
-    "icon": "./icon.png"
+    "icon": "icon.png"
 }

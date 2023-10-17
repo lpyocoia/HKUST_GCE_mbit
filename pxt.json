@@ -5,7 +5,8 @@
     "license": "MIT",
     "dependencies": {
         "core": "*",
-        "neopixel": "github:lzty634158/pxt-neopixel"
+        "neopixel": "github:lzty634158/pxt-neopixel",
+        "BitPlayer": "github:TinkerGen/pxt-BitPlayer"
         
 	
 

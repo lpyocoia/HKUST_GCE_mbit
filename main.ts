@@ -603,7 +603,7 @@ namespace mbit_Robot {
     }
 
 
-    function Car_run(speed1: number, speed2: number) {
+    function Car_back(speed1: number, speed2: number) {
 
         speed1 = speed1 * 16; // map 350 to 4096
         speed2 = speed2 * 16;
@@ -626,7 +626,7 @@ namespace mbit_Robot {
        // pins.digitalWritePin(DigitalPin.P8, 0);
     }
 
-    function Car_back(speed1: number, speed2: number) {
+    function Car_run(speed1: number, speed2: number) {
 
         speed1 = speed1 * 16; // map 350 to 4096
         speed2 = speed2 * 16;
@@ -649,7 +649,7 @@ namespace mbit_Robot {
         //pins.digitalWritePin(DigitalPin.P8, 1);
     }
 
-    function Car_left(speed1: number, speed2: number) {
+    function Car_right(speed1: number, speed2: number) {
 
         speed1 = speed1 * 16; // map 350 to 4096
         speed2 = speed2 * 16;
@@ -673,7 +673,7 @@ namespace mbit_Robot {
         //pins.digitalWritePin(DigitalPin.P1, 0);
     }
 
-    function Car_right(speed1: number, speed2: number) {
+    function Car_left(speed1: number, speed2: number) {
 
         speed1 = speed1 * 16; // map 350 to 4096
         speed2 = speed2 * 16;
@@ -709,7 +709,7 @@ namespace mbit_Robot {
         //pins.digitalWritePin(DigitalPin.P1, 0);
     }
 
-    function Car_spinleft(speed1: number, speed2: number) {
+    function Car_spinright(speed1: number, speed2: number) {
 
         speed1 = speed1 * 16; // map 350 to 4096
         speed2 = speed2 * 16;
@@ -733,7 +733,7 @@ namespace mbit_Robot {
         //pins.analogWritePin(AnalogPin.P1, speed);
     } 
 
-    function Car_spinright(speed1: number, speed2: number) {
+    function Car_spinleft(speed1: number, speed2: number) {
 
         speed1 = speed1 * 16; // map 350 to 4096
         speed2 = speed2 * 16;
@@ -1021,13 +1021,13 @@ namespace mbit_Robot {
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
     export function CarCtrl(index: CarState): void {
         switch (index) {
-            case CarState.Car_Run: Car_run(255, 255); break;
-            case CarState.Car_Back: Car_back(255, 255); break;
-            case CarState.Car_Left: Car_left(0, 255); break;
-            case CarState.Car_Right: Car_right(255, 0); break;
+            case CarState.Car_Run: Car_run(130, 130); break;//150
+            case CarState.Car_Back: Car_back(130, 130); break;
+            case CarState.Car_Left: Car_left(0, 130); break;
+            case CarState.Car_Right: Car_right(130, 0); break;
             case CarState.Car_Stop: Car_stop(); break;
-            case CarState.Car_SpinLeft: Car_spinleft(255, 255); break;
-            case CarState.Car_SpinRight: Car_spinright(255, 255); break;
+            case CarState.Car_SpinLeft: Car_spinleft(130, 130); break;
+            case CarState.Car_SpinRight: Car_spinright(130, 130); break;
         }
     }
     //% blockId=mbit_CarCtrlSpeed block="CarCtrlSpeed|%index|speed %speed"
@@ -1037,6 +1037,7 @@ namespace mbit_Robot {
     //% color="#006400"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
     export function CarCtrlSpeed(index: CarState, speed: number): void {
+        speed = 150 * speed / 255;
         switch (index) {
             case CarState.Car_Run: Car_run(speed, speed); break;
             case CarState.Car_Back: Car_back(speed, speed); break;
@@ -1054,6 +1055,8 @@ namespace mbit_Robot {
     //% color="#006400"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
     export function CarCtrlSpeed2(index: CarState, speed1: number, speed2: number): void {
+        speed1 = 150 * speed1 / 255;
+        speed2 = 150 * speed2 / 255;
         switch (index) {
             case CarState.Car_Run: Car_run(speed1, speed2); break;
             case CarState.Car_Back: Car_back(speed1, speed2); break;

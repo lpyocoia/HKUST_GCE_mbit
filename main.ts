@@ -649,7 +649,7 @@ namespace mbit_Robot {
         //pins.digitalWritePin(DigitalPin.P8, 1);
     }
 
-    function Car_right(speed1: number, speed2: number) {
+    function Car_left(speed1: number, speed2: number) {
 
         speed1 = speed1 * 16; // map 350 to 4096
         speed2 = speed2 * 16;
@@ -673,7 +673,7 @@ namespace mbit_Robot {
         //pins.digitalWritePin(DigitalPin.P1, 0);
     }
 
-    function Car_left(speed1: number, speed2: number) {
+    function Car_right(speed1: number, speed2: number) {
 
         speed1 = speed1 * 16; // map 350 to 4096
         speed2 = speed2 * 16;
